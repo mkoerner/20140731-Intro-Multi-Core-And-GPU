@@ -18,7 +18,3 @@ scalarProd x y = A.sum $ A.zipWith (*) x y
 
 main = do
   putStrLn $ show $ I.run $ scalarProd x y
-
-
-
-

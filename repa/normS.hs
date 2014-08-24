@@ -1,11 +1,10 @@
 {-# LANGUAGE TypeOperators #-}
 import Data.Array.Repa as R
 import Data.Array.Repa.Index as I
-import qualified Data.Array.Repa.Repr.Vector as V
 import Criterion
 import Criterion.Main (defaultMain)
 
--- Interaction -> 10000
+-- run interactively in ghci with 10000
 shape :: DIM1
 shape = ix1 10000
 

@@ -3,7 +3,7 @@ import Data.Array.Accelerate as A
 import Data.Array.Accelerate.CUDA as C
 
 n :: Int
-n = 100000
+n = 10000000000
 
 shape :: DIM1
 shape = Z :. n
@@ -18,7 +18,3 @@ scalarProd x y = A.sum $ A.zipWith (*) x y
 
 main = do
   putStrLn $ show $ C.run $ scalarProd x y
-
-
-
-
